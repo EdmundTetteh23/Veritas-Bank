@@ -30,9 +30,9 @@ Veritas Bank lacked real-time churn monitoring and behavioral segmentation. Deci
 ## Data Pipeline and Architecture
 [Raw Dataset] ➔ [Data Prep & Feature Engineering] ➔ [Data Model] ➔ [Interactive Power BI Report]
 
-## ETL & Data Transformation Steps 
-Data Hygiene & Quality Checks: Cleaned null values, validated unique CustomerId records, and verified column data type. 
-Feature Engineering: Derived structural grouping attributes including Age Group bins (e.g., 10–19, 20–29, 30–39) and Balance Group tiers (e.g., 0, 1–19.9K, 20K–39.9K).  
+### ETL & Data Transformation Steps 
+- Data Hygiene & Quality Checks: Cleaned null values, validated unique CustomerId records, and verified column data type. 
+- Feature Engineering: Derived structural grouping attributes including Age Group bins (e.g., 10–19, 20–29, 30–39) and Balance Group tiers (e.g., 0, 1–19.9K, 20K–39.9K).  
 
 ## Data Model and Relationships
 The data model connects dim_customer table with fact_accounts table via a 1:1 relationship linked on CustomerId.
