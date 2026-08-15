@@ -3,11 +3,11 @@ A comprehensive customer churn and retention intelligence solution built for Ver
 
 ## Table of Contents
 - [Overview](#overview)
-- [Project Brief & Problem Statement](#Project-Brief-&-Problem-Statement)
-- [Data Pipeline & Architecture](#Data-Pipeline-&-Architecture)
-- [Data Model & Relationships](#Data-Model-&-Relationships)
-- [Core DAX Measures & Formulas](#Core-DAX-Measures-&-Formulas)
-- [Dashboards & Visualizations](#Dashboards-&-Visualizations)
+- [Project Brief and Problem Statement](#Project-Brief-and-Problem-Statement)
+- [Data Pipeline and Architecture](#Data-Pipeline-and-Architecture)
+- [Data Model and Relationships](#Data-Model-and-Relationships)
+- [Core DAX Measures and Formulas](#Core-DAX-Measures-and-Formulas)
+- [Dashboards and Visualizations](#Dashboards-and-Visualizations)
 - [Key Business Insights](#Key-Business-Insights)
 - [Strategic Recommendations](#Strategic-Recommendations)
 - [Tech Stack](#Tech-Stack)
@@ -18,7 +18,7 @@ Veritas Bank is a UK-headquartered retail bank established in the 1990s with maj
 
 This project establishes a business intelligence framework by structuring customer account transaction files into a relational data model, applying ETL transformations, and creating intuitive visuals that allow leadership to track churn drivers, and customer demographics. 
 
-## Project Brief & Problem Statement
+## Project Brief and Problem Statement
 ### Problem Statement 
 Veritas Bank lacked real-time churn monitoring and behavioral segmentation. Decisions were traditionally made reactively without granular insights into why customers leave, making it difficult to optimize acquisition, evaluate credit health, and prevent revenue loss across European markets. 
 
@@ -27,14 +27,14 @@ Veritas Bank lacked real-time churn monitoring and behavioral segmentation. Deci
 - Demographic & Regional Intelligence: Evaluate churn behavior and account usage across the UK, Germany, and France. 
 - Targeted Risk Mitigation: Segment high-risk customer profiles (e.g., by age group, activity status, or product density) to guide marketing and retention policies. 
   
-## Data Pipeline & Architecture
+## Data Pipeline and Architecture
 [Raw Dataset] ➔ [Data Prep & Feature Engineering] ➔ [Data Model] ➔ [Interactive Power BI Report]
 
 ## ETL & Data Transformation Steps 
 Data Hygiene & Quality Checks: Cleaned null values, validated unique CustomerId records, and verified column data type. 
 Feature Engineering: Derived structural grouping attributes including Age Group bins (e.g., 10–19, 20–29, 30–39) and Balance Group tiers (e.g., 0, 1–19.9K, 20K–39.9K).  
 
-## Data Model & Relationships
+## Data Model and Relationships
 The data model connects dim_customer table with fact_accounts table via a 1:1 relationship linked on CustomerId.
 
 <img width="1011" height="499" alt="VB Data Model" src="https://github.com/user-attachments/assets/e750bfd0-73b9-4e8a-bccc-0205042623c2" />
@@ -42,13 +42,13 @@ The data model connects dim_customer table with fact_accounts table via a 1:1 re
 dim_customer: Lookup table containing customer demographic attributes (CustomerId, Country, Age, Age (bins), Age Group).
 fact_accounts: Fact/Operational table containing financial and activity attributes (CustomerId, CreditScore, Balance, Balance Group, CreditCard, ActiveMember).
 
-## Core DAX Measures & Formulas
+## Core DAX Measures and Formulas
 - Total Customers = COUNT(CustomerInfo[CustomerId])
 - Total Churned = CALCULATE(COUNT(AccountInfo[CustomerId]), AccountInfo[Exited]=1)
 - Churn Rate = DIVIDE(CALCULATE(COUNTROWS(AccountInfo),AccountInfo[Exited] = "1"), COUNTROWS(AccountInfo))
 
 
-## Dashboards & Visualizations
+## Dashboards and Visualizations
 ### Dashboard 1 — Customer Demographics
 Provides executive visibility into total customer counts, overall churn metrics, regional balance totals, and demographic distributions.
 
