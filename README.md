@@ -5,6 +5,7 @@ A comprehensive customer churn and retention intelligence solution built for Ver
 - [Overview](#overview)
 - [Project Brief and Problem Statement](#Project-Brief-and-Problem-Statement)
 - [Data Pipeline and Architecture](#Data-Pipeline-and-Architecture)
+- [Data Transformation and Cleaning](#Data-Transformation-and-Cleaning)
 - [Data Model and Relationships](#Data-Model-and-Relationships)
 - [Core DAX Measures and Formulas](#Core-DAX-Measures-and-Formulas)
 - [Dashboards and Visualizations](#Dashboards-and-Visualizations)
@@ -30,6 +31,7 @@ Veritas Bank lacked real-time churn monitoring and behavioral segmentation. Deci
 ## Data Pipeline and Architecture
 [Raw Dataset] ➔ [Data Prep & Feature Engineering] ➔ [Data Model] ➔ [Interactive Power BI Report]
 
+## Data Transformation and Cleaning
 ### ETL & Data Transformation Steps 
 - Data Hygiene & Quality Checks: Cleaned null values, validated unique CustomerId records, and verified column data type. 
 - Feature Engineering: Derived structural grouping attributes including Age Group bins (e.g., 10–19, 20–29, 30–39) and Balance Group tiers (e.g., 0, 1–19.9K, 20K–39.9K).  
