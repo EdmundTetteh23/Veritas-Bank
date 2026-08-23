@@ -3,7 +3,7 @@ A comprehensive customer churn and retention intelligence solution built for Ver
 
 ## Table of Contents
 - [Overview](#overview)
-- [Project Brief and Problem Statement](#Project-Brief-and-Problem-Statement)
+- [Problem Statement and Project Objectives](#Problem-Statement-and-Project-Objectives)
 - [Data Pipeline and Architecture](#Data-Pipeline-and-Architecture)
 - [Data Transformation and Cleaning](#Data-Transformation-and-Cleaning)
 - [Data Model and Relationships](#Data-Model-and-Relationships)
@@ -18,7 +18,7 @@ Veritas Bank is a UK-headquartered retail bank established in the 1990s with maj
 
 This project establishes a business intelligence framework by structuring customer account transaction files into a relational data model, applying ETL transformations, and creating intuitive visuals that allow leadership to track churn drivers, and customer demographics. 
 
-## Project Brief and Problem Statement
+## Problem Statement and Project Objectives
 ### Problem Statement 
 Veritas Bank lacked real-time churn monitoring and behavioral segmentation. Decisions were traditionally made reactively without granular insights into why customers leave, making it difficult to optimize acquisition, evaluate credit health, and prevent revenue loss across European markets. 
 
