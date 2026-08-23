@@ -12,7 +12,6 @@ A comprehensive customer churn and retention intelligence solution built for Ver
 - [Key Business Insights](#Key-Business-Insights)
 - [Strategic Recommendations](#Strategic-Recommendations)
 - [Tech Stack](#Tech-Stack)
-- Author
 
 ## Overview
 Veritas Bank is a UK-headquartered retail bank established in the 1990s with major operations across Germany and France, serving over 3 million customers. Despite its strong digital presence, the bank faced rising customer churn due to intense fintech competition and lower engagement in continental markets. 
